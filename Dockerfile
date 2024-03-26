@@ -1,6 +1,6 @@
 FROM node:16 as builder
 WORKDIR /transmissionic
-COPY * .
+COPY . .
 RUN npm install --loglevel verbose
 RUN npm run build:webui
 
