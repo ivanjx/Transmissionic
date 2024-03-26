@@ -1,0 +1,10 @@
+{
+    "colorScheme": "dark",
+    "language": "en-US",
+    "orderBy": "addedDate",
+    "reverse": true,
+    "useBits": false,
+    "ipFlags": true,
+    "refreshInterval": 1,
+    "timeout": 5
+}
