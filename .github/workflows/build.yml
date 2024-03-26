@@ -20,11 +20,11 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build and push mainline
+      - name: Build and push
         uses: docker/build-push-action@v5
         with:
           context: ./
-          file: mainline-alpine.Dockerfile
+          file: Dockerfile
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ghcr.io/ivanjx/transmissionic:latest
